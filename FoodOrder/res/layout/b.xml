@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#E0E0E0">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Noodles"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    <fragment
+    android:id="@+id/fragment1"
+    android:name="com.nrevu.foodorder.FoodFrag"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_below="@+id/editText2"
+    android:layout_marginTop="16dp" />
+
+    
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView2"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:text="The noodle is a type of staple food made from some type of unleavened dough which is rolled flat and cut into one of a variety of shapes. Small :$3   Medium: $4   Large:  $6" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/fragment1"
+        android:src="@drawable/nooldes" />
+
+</RelativeLayout>

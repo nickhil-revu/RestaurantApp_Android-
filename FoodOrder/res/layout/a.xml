@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#E0E0E0" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fried Rice"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+   
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:text="Fried rice is a dish of steamed rice stir-fried in a wok, often mixed with other ingredients, such as eggs, vegetables, and meat. It is sometimes served as the penultimate dish in Chinese banquets, just before dessert  Small: $4   Medium:$5   Large: $7" />
+
+<fragment
+    android:id="@+id/fragment1"
+    android:name="com.nrevu.foodorder.FoodFrag"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_below="@+id/editText1"
+    android:layout_marginTop="16dp" />
+
+<ImageView
+    android:id="@+id/imageView1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:layout_alignTop="@+id/fragment1"
+    android:src="@drawable/friedrice" />
+
+
+</RelativeLayout>

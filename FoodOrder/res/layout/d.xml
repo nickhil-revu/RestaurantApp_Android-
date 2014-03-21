@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#E0E0E0" >
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chicken Soup"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+    <fragment
+    android:id="@+id/fragment1"
+    android:name="com.nrevu.foodorder.FoodFrag"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_below="@+id/editText4"
+    android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView4"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:text="Chicken soup is a soup made from chicken, simmered with various other ingredients. The classic chicken soup consists of a clear broth, often with pieces of chicken or vegetables;    Small: $5    Medium: $6    Large $7" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/fragment1"
+        android:layout_toRightOf="@+id/textView4"
+        android:src="@drawable/soup" />
+
+</RelativeLayout>
